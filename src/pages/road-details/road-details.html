@@ -1,0 +1,68 @@
+<!--
+  Generated template for the RoadDetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>
+      <div>Road 01</div>
+      <div style="font-size:12px">Length: 300 Kms</div>
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  
+  <div #map id='map'></div>
+
+  <ion-fab top right>
+    <button  ion-fab mini (click)="show()"><ion-icon name="document"></ion-icon></button>    
+  </ion-fab>
+  
+</ion-content>
+
+<ion-footer>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-navbar>
+              <ion-buttons left>
+                  <button ion-button clear item-start style='text-transform: none' (click)="push()">
+                      View Details
+                    </button>   
+              </ion-buttons>  
+              <ion-buttons end>
+                  <button ion-button clear icon-only (click)="hide()" item-end>
+                      <ion-icon name="close"></ion-icon>
+                    </button>   
+              </ion-buttons>  
+          </ion-navbar>                          
+        </ion-col>
+      </ion-row>     
+      <ion-row>
+        <ion-col col-4>
+            <button ion-button clear  class="text-on-bottom">
+                <ion-icon name='document'></ion-icon>
+                Pot Holes
+          </button>
+        </ion-col>  
+          <ion-col col-4>
+              <button ion-button clear class="text-on-bottom">
+                  <ion-icon name='document' ></ion-icon>
+                  Signals
+            </button>
+          </ion-col>
+          <ion-col col-4>
+              <button ion-button clear class="text-on-bottom">
+                  <ion-icon name='document'></ion-icon>
+                  Damages
+            </button>   
+          </ion-col>                                     
+      </ion-row>
+    </ion-grid>
+</ion-footer>

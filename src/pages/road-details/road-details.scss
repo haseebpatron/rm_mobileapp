@@ -1,0 +1,15 @@
+page-road-details {
+    .scroll {
+        height: 100%
+    }
+
+    #map {
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-on-bottom > .button-inner {
+        flex-direction: column;
+        text-transform: none;
+      }
+}
